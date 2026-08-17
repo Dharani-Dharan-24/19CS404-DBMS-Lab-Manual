@@ -47,123 +47,144 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1213" height="740" alt="image" src="https://github.com/user-attachments/assets/011c5385-aff0-4f16-b1df-90d31f2ae25a" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 1
+update employees set salary = salary + 500, email = "updated" where job_id = "SA_REP" and commission_pct > 0.15;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1287" height="317" alt="image" src="https://github.com/user-attachments/assets/f939d1d1-3e52-4e0c-ae94-94fb1e30b96d" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="711" height="153" alt="image" src="https://github.com/user-attachments/assets/f4d74fbf-1553-455d-916b-3dd92f1b9d1a" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+update products set availability = availability * 2 where product_id = 1;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="935" height="152" alt="image" src="https://github.com/user-attachments/assets/e2854521-0be1-489f-8f90-e98da258185c" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1081" height="401" alt="image" src="https://github.com/user-attachments/assets/ec91f069-14e6-4916-ba19-7c7cb1158b51" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+update employees set email = "not available", commission_pct = 0.55 where department_id = 110;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1277" height="230" alt="image" src="https://github.com/user-attachments/assets/b9fb1f9c-04e3-4e02-a40c-ef2a0dca4c66" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="852" height="422" alt="image" src="https://github.com/user-attachments/assets/942da4fe-ab1d-4455-9333-385a8beac0ec" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+update employees set hire_date = "2024-01-24" where department_id = 50;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1012" height="176" alt="image" src="https://github.com/user-attachments/assets/31ff17f2-74f1-44f2-810e-7d71dfd4211d" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1051" height="402" alt="image" src="https://github.com/user-attachments/assets/ceafd706-3389-472d-9454-b0e49d8bcbd7" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+update products set reorder_lvl = (reorder_lvl * 0.7) where product_name like '%cream%' and quantity > reorder_lvl;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1353" height="211" alt="image" src="https://github.com/user-attachments/assets/80011036-f0fe-4e6b-af75-76c2ff059651" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1052" height="513" alt="image" src="https://github.com/user-attachments/assets/0811a39e-54f9-4a6b-97b5-07c09d706687" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+delete from customer where agent_code = "A003" or agent_code = "A008";
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="973" height="733" alt="image" src="https://github.com/user-attachments/assets/f627a36f-56ba-4f1e-ba86-ffba032c51a7" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1157" height="291" alt="image" src="https://github.com/user-attachments/assets/5f0d4a5c-d42b-44dd-8b13-c898574751be" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+delete from customer where grade = 3 and cust_name like "%BBB%" and payment_amt > 2000;
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1657" height="253" alt="image" src="https://github.com/user-attachments/assets/66c0e543-8bfb-4ca7-b895-5d59b1f1628d" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1283" height="302" alt="image" src="https://github.com/user-attachments/assets/4640db52-7540-46f0-a385-b9bb4375f031" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+delete from customer where cust_country not in ("India", "USA");
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1781" height="296" alt="image" src="https://github.com/user-attachments/assets/a8a2cafc-d1be-473e-ab22-da1d13cdad9b" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1146" height="353" alt="image" src="https://github.com/user-attachments/assets/22a08796-e6ce-4e67-ab96-6a96d70946e9" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+delete from customer where cust_country not in ('UK', 'USA', 'Canada') and grade >= 3;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1645" height="212" alt="image" src="https://github.com/user-attachments/assets/2c6a97f1-4431-4a0e-a402-d80cbe93a5e3" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1288" height="472" alt="image" src="https://github.com/user-attachments/assets/70a84e19-456c-43b5-8005-13ddd3797452" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+delete from customer where opening_amt between 4000 and 6000;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1572" height="281" alt="image" src="https://github.com/user-attachments/assets/b8cfeaa9-c4fc-4f32-b30e-b9bb89b76492" />
+
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
