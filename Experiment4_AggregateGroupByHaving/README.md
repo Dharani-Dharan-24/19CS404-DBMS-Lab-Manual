@@ -38,123 +38,143 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1216" height="572" alt="image" src="https://github.com/user-attachments/assets/e3bb41c1-8a67-49df-ae1f-f27c63442821" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+select DoctorID, count(PrescriptionID) as TotalPrescriptions from Prescriptions group by DoctorID;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1232" height="681" alt="image" src="https://github.com/user-attachments/assets/26e0a48b-0dd0-44ef-9e47-e7ea274c3e19" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="991" height="497" alt="image" src="https://github.com/user-attachments/assets/91f08a8e-3e76-4481-8c8e-d157e97fbd1d" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+select Specialty, Gender, count(DoctorID) as TotalDoctors from Doctors group by Specialty, Gender;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1222" height="577" alt="image" src="https://github.com/user-attachments/assets/a95c261b-153e-4705-8937-15945d110ae3" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1167" height="571" alt="image" src="https://github.com/user-attachments/assets/cc0810b0-e579-4efb-9134-fd9408a6db87" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+select InsuranceCompany, count(InsuranceID) as TotalPatients from Insurance group by  InsuranceCompany;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1157" height="602" alt="image" src="https://github.com/user-attachments/assets/50a837aa-c380-49d6-9fd3-be4d2f5f2c9b" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="962" height="455" alt="image" src="https://github.com/user-attachments/assets/6b372ced-c486-4039-b3dd-2974c0084ebd" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+select count(customer_id) as COUNT from customer where grade is not null;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1255" height="262" alt="image" src="https://github.com/user-attachments/assets/ba11a809-6a1d-4c28-bc7a-8574711f6776" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1085" height="427" alt="image" src="https://github.com/user-attachments/assets/4ee29090-657f-4f6f-b018-693cf145d7cd" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+select max(age) - min(age) as age_difference from employee;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1137" height="260" alt="image" src="https://github.com/user-attachments/assets/9c742143-c89d-45aa-9858-fb42fdd23f94" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1000" height="415" alt="image" src="https://github.com/user-attachments/assets/938ac8e2-efa1-4775-8e00-e088a2f63a52" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+select sum(purch_amt) as TOTAL from orders;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1217" height="270" alt="image" src="https://github.com/user-attachments/assets/cc0f5d7d-80b8-44e9-938e-0245c0a1051f" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1150" height="420" alt="image" src="https://github.com/user-attachments/assets/d7b8093b-ec17-4dc8-b6fd-87cdb582704a" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+select name, max(income) from employee where city = "California";
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1100" height="290" alt="image" src="https://github.com/user-attachments/assets/0e90658d-b034-459a-ba1a-64925241a8bc" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1232" height="422" alt="image" src="https://github.com/user-attachments/assets/f5a16b31-b6ab-4ac1-8192-89f557d7ce2d" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+select category_id, count(*) as COUNT from products where category_id > 2 group by category_id;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1295" height="275" alt="image" src="https://github.com/user-attachments/assets/582d87f1-f449-457a-8e62-7161dd76834a" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="980" height="456" alt="image" src="https://github.com/user-attachments/assets/ccbe8537-f515-4ead-9af4-db55a187b4f0" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+select PatientID, count(*) as TotalRecords from MedicalRecords group by PatientID having count(*) > 3;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1242" height="277" alt="image" src="https://github.com/user-attachments/assets/d96abbc3-4a1d-4524-b6e0-ee6ddb1c0fe4" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1247" height="496" alt="image" src="https://github.com/user-attachments/assets/41655c16-5a56-4d19-aa09-95fb34bc1d04" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+select address, SUM(salary) from customer1 group by address having SUM(salary) > 2000;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="812" height="400" alt="image" src="https://github.com/user-attachments/assets/c2fb1bfc-b0b5-4e89-8b72-44fe3d970244" />
+
 
 
 ## RESULT
